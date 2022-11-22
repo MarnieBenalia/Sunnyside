@@ -8,7 +8,7 @@
 //-------------------------------------------------------------------------------------------------------------------//
 
 html, body{
-    margin:0;
+    margin:0 auto;
 }
 
 
@@ -16,16 +16,15 @@ html, body{
 
 #orange{
     width: auto;
-    height: 25em;
+    height: 27em;
     background-image: url(images/photos/image-header.jpg);
-    background-size: 50em;
-    background-position: center;
-    background-repeat:no-repeat;
+    background-size: cover;
+    @extend  %background;
 }
 
 #oeuf{
     width: auto;
-    height: 25em;
+    height: 20em;
     background-image: url(images/photos/image-transform.jpg);
     background-size: 25em;
     background-repeat:no-repeat;
@@ -41,10 +40,49 @@ html, body{
     background-position: center;
 }
 
+#fourimages{
+    width:auto;
+    height:23em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+}
+
+#img1{ 
+    grid-area: 1 / 1 / 2 / 2; 
+    background-image:url(images/photos/image-gallery-milkbottles.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12.5em;
+}
+
+#img2{ 
+    grid-area: 1 / 2 / 2 / 3;
+    background-image:url(images/photos/image-gallery-orange.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12.5em;
+}
+
+#img3{ 
+    grid-area: 2 / 1 / 3 / 2;
+    background-image:url(images/photos/image-gallery-cone.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12.5em;
+}
+#img4 { 
+    grid-area: 2 / 2 / 3 / 3; 
+    background-image:url(images/photos/image-gallery-sugarcubes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12.5em;
+}
+
 #about{
 
     width: auto;
-    height: 23.5em;
+    height: 20em;
     background-color:$fond-bleu-clair;
 }
 
@@ -66,9 +104,6 @@ html, body{
 
 #wac {
     @include typo(Fraunces,2.4em, 3.08em, white);
-    display:flex;
-
-
     letter-spacing: 0.3em;
 }
 
@@ -102,6 +137,29 @@ a{
 
 //---------------------------------------------------TEXTES---------------------------------------------------------//
 
+#emilypic{
+    width:7em;
+    height: 7em;
+    background-image: url(images/people/image-emily.jpg);
+    @extend  %background;
+    border-radius: 50%;
+    
+}
 
+#thomaspic{
+    width:7em;
+    height: 7em;
+    background-image: url(images/people/image-thomas.jpg);
+    border-radius: 50%;
+}
+
+#jennypic{
+    width:7em;
+    height: 7em;
+    background-image: url(images/people/image-jennie.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
 
 

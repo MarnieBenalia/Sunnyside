@@ -15,8 +15,6 @@ html, body{
 //------------------------------------------------------FOND---------------------------------------------------------//
 
 #orange{
-    /*display: flex;
-    justify-content: center;*/
     width: auto;
     height: 25em;
     background-image: url(images/photos/image-header.jpg);
@@ -31,6 +29,23 @@ html, body{
     background-image: url(images/photos/image-transform.jpg);
     background-size: 25em;
     background-repeat:no-repeat;
+}
+
+#cup{
+
+    width: auto;
+    height: 23.5em;
+    background-image:url(images/photos/image-stand-out.jpg);
+    background-repeat: no-repeat;
+    background-size: 25em;
+    background-position: center;
+}
+
+#about{
+
+    width: auto;
+    height: 23.5em;
+    background-color:$fond-bleu-clair;
 }
 
 //------------------------------------------------------FOND---------------------------------------------------------//
@@ -51,6 +66,10 @@ html, body{
 
 #wac {
     @include typo(Fraunces,2.4em, 3.08em, white);
+    display:flex;
+
+
+    letter-spacing: 0.3em;
 }
 
 p{
@@ -77,7 +96,8 @@ a{
 }
 
 #titreclient{
-    
+    text-transform: capitalize;
+    @include typo(Fraunces, 1em, 1.25em, $titre-nom-client);
 }
 
 //---------------------------------------------------TEXTES---------------------------------------------------------//

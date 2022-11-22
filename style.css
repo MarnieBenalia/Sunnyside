@@ -3,8 +3,6 @@ html, body {
 }
 
 #orange {
-  /*display: flex;
-  justify-content: center;*/
   width: auto;
   height: 25em;
   background-image: url(images/photos/image-header.jpg);
@@ -19,6 +17,21 @@ html, body {
   background-image: url(images/photos/image-transform.jpg);
   background-size: 25em;
   background-repeat: no-repeat;
+}
+
+#cup {
+  width: auto;
+  height: 23.5em;
+  background-image: url(images/photos/image-stand-out.jpg);
+  background-repeat: no-repeat;
+  background-size: 25em;
+  background-position: center;
+}
+
+#about {
+  width: auto;
+  height: 23.5em;
+  background-color: #90D4C6;
 }
 
 .tpara {
@@ -51,6 +64,8 @@ html, body {
   font-size: 2.4em;
   line-height: 3.08em;
   color: white;
+  display: flex;
+  letter-spacing: 0.3em;
 }
 
 p {
@@ -90,4 +105,13 @@ a {
   font-size: 1.75em;
   line-height: 2.15em;
   color: #052C3B;
+}
+
+#titreclient {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 1em;
+  line-height: 1.25em;
+  color: #A7AAAD;
 }/*# sourceMappingURL=style.css.map */

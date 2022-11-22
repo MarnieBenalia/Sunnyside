@@ -12,3 +12,13 @@
         left: $left;
         transform: translate($x,$y)
 }
+
+@mixin typo ($font-family, $font-size, $line-height, $color){
+
+        text-align: center;
+        font-family:$font-family;
+        font-size:$font-size;
+        line-height:$line-height;
+        color:$color;
+        
+}

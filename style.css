@@ -1,0 +1,93 @@
+html, body {
+  margin: 0;
+}
+
+#orange {
+  /*display: flex;
+  justify-content: center;*/
+  width: auto;
+  height: 25em;
+  background-image: url(images/photos/image-header.jpg);
+  background-size: 50em;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#oeuf {
+  width: auto;
+  height: 25em;
+  background-image: url(images/photos/image-transform.jpg);
+  background-size: 25em;
+  background-repeat: no-repeat;
+}
+
+.tpara {
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 2em;
+  line-height: 2.4em;
+  color: #24303E;
+}
+
+.clientname {
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  color: #24303E;
+}
+
+.job {
+  text-align: center;
+  font-family: Barlow;
+  font-size: 0.875em;
+  line-height: 1.8em;
+  color: #A7AAAD;
+}
+
+#wac {
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 2.4em;
+  line-height: 3.08em;
+  color: white;
+}
+
+p {
+  text-align: center;
+  font-family: Barlow;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  color: #808397;
+  padding: 0em 1em;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  color: #24303E;
+  display: flex;
+  justify-content: center;
+}
+
+#tcer {
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 1.75em;
+  line-height: 2.15em;
+  color: #24554A;
+}
+
+#tmand {
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 1.75em;
+  line-height: 2.15em;
+  color: #052C3B;
+}/*# sourceMappingURL=style.css.map */

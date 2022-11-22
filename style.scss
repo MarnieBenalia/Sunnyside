@@ -1,0 +1,87 @@
+@import './scss/_mixins';
+// pour importer un élément: @include absolute-el()
+@import './scss/_placeholders'; 
+// pour importer un élément: @extend %lenomdetonplaceholder
+@import './scss/_variables';
+// pour importer un élément: $exemplecouleur
+
+//-------------------------------------------------------------------------------------------------------------------//
+
+html, body{
+    margin:0;
+}
+
+
+//------------------------------------------------------FOND---------------------------------------------------------//
+
+#orange{
+    /*display: flex;
+    justify-content: center;*/
+    width: auto;
+    height: 25em;
+    background-image: url(images/photos/image-header.jpg);
+    background-size: 50em;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+#oeuf{
+    width: auto;
+    height: 25em;
+    background-image: url(images/photos/image-transform.jpg);
+    background-size: 25em;
+    background-repeat:no-repeat;
+}
+
+//------------------------------------------------------FOND---------------------------------------------------------//
+
+//---------------------------------------------------TEXTES---------------------------------------------------------//
+
+.tpara{
+    @include typo(Fraunces, 2em, 2.4em, $titre-fond-blanc);
+}
+
+.clientname{
+    @include typo(Fraunces, 1.1em, 1.8em, $titre-fond-blanc);
+}
+
+.job{
+    @include typo(Barlow, 0.875em, 1.8em, $titre-nom-client);
+}
+
+#wac {
+    @include typo(Fraunces,2.4em, 3.08em, white);
+}
+
+p{
+    @include typo(Barlow, 1.1em, 1.8em, $txt-fond-clair);
+    padding:0em 1em;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    @include typo(Fraunces, 0.9em, 1.5em, $titre-fond-blanc);
+    display:flex;
+    justify-content: center;
+}
+
+#tcer{
+    @include typo(Fraunces,1.75em,2.15em,$titre-cerise);
+}
+
+#tmand{
+    @include typo(Fraunces,1.75em,2.15em,$titre-mand);
+}
+
+#titreclient{
+    
+}
+
+//---------------------------------------------------TEXTES---------------------------------------------------------//
+
+
+
+

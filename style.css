@@ -323,7 +323,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
   }
-  #trans {
+  #transform {
     grid-area: 1/1/2/2;
     width: auto;
     height: 40em;
@@ -336,6 +336,12 @@ a {
   }
   .tpara {
     text-align: left;
+    margin: 25% 20% 0% 15%;
+  }
+  .ppara {
+    text-align: left;
+    margin: 5% 18% 0% 15%;
+    max-width: 80%;
   }
   #cupstand {
     display: grid;

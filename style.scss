@@ -15,8 +15,7 @@ html, body{
 
 #orange{
     display: grid;
-    width: auto;
-    height: 27em;
+    @include wihe (auto, 27em);
     background-image: url(images/photos/image-header.jpg);
     background-size: cover;
     @extend  %background;
@@ -26,16 +25,14 @@ html, body{
     grid-area: 1 / 2 / 2 / 2;
     margin-top:1em;
     margin-left: 8em;
-    width:3em;
-    height: 3em;
+    @include wihe (3em, 3em);
     background-image:url(images/icons/icon-hamburger.svg);
     @extend  %background;
 }
 
 #logotop{
     margin:1em;
-    width:8em;
-    height: 3em;
+    @include wihe (8em, 3em);
     background-image:url(images/logo.svg);
     @extend  %background;
 }
@@ -43,8 +40,7 @@ html, body{
 #arrow{
     grid-area: 2 / 2 / 5 / 3;
     margin: 7em 10em 0em 0em;
-    width:3em;
-    height: 7em;
+    @include wihe (3em, 7em);
     background-image:url(images/icons/icon-arrow-down.svg);
     @extend  %background;
 }
@@ -53,8 +49,7 @@ html, body{
 //--------------------------------------------------------------------------//
 
 #oeuf{
-    width: 23.5em;
-    height: 20em;
+    @include wihe (23.5em, 20em);
     background-image: url(images/photos/image-transform.jpg);
     background-size: 25em;
     background-repeat:no-repeat;
@@ -62,17 +57,14 @@ html, body{
 }
 
 #cup{
-    width: auto;
-    height: 23.5em;
+    @include wihe (auto, 23.5em);
     background-image:url(images/photos/image-stand-out.jpg);
     background-size: 25em;
     @extend  %background;
 }
 
 #cerise{
-
-    width: auto;
-    height: 35em;
+    @include wihe (auto, 35em);
     background-image:url(images/photos/image-graphic-design.jpg);
     background-size: cover;
     @extend  %background;
@@ -81,8 +73,7 @@ html, body{
 #mandarine{
     display: grid;
     grid-template-rows: repeat(1, 1fr); 
-    width: auto;
-    height: 30em;
+    @include wihe (auto, 30em);
     background-image:url(images/photos/image-photography.jpg);
     background-size: cover;
     @extend  %background;
@@ -91,8 +82,7 @@ html, body{
 //--------------------------------------------------------------------------//
 
 #fourimages{
-    width:auto;
-    height:23em;
+    @include wihe (auto, 23em);
     display: grid;
 }
 
@@ -229,8 +219,7 @@ a{
 //--------------------------------------------------------------------------//
 
 #about{
-    width: auto;
-    height: 20em;
+    @include wihe (auto, 20em);
     background-color:$fond-bleu-clair;
     background-size: cover;
 }
@@ -238,8 +227,7 @@ a{
 #logobottom{
     margin-left: 5.5em;
     padding-top: 5em;
-    width:11em;
-    height: 1em;
+    @include wihe (11em, 1em);
     background-image:url(images/logo.svg) ;
     @extend  %background;
 }
@@ -338,17 +326,28 @@ html, body{
     grid-template-rows: 1fr; 
 }
     
-#trans{
+#transform{
     grid-area: 1 / 1 / 2 / 2;
-    @extend %taillemq;
+    width: auto;
+    height: 40em;
 }
     
 #oeuf{
     grid-area: 1 / 2 / 2 / 3;
-    @extend %taillemq;
+    width: auto;
+    height: 40em;
     background-size: cover;
 }
+.tpara{
+    text-align:left;
+    margin:25% 20% 0% 15%;
+}
 
+.ppara{
+    text-align:left;
+    margin:5% 18% 0% 15%;
+    max-width: 80%;
+}
 //--------------------------------------------------------------------------//
     
 #cupstand{
@@ -359,13 +358,15 @@ html, body{
     
 #cup{
     grid-area: 1 / 1 / 2 / 2;
-    @extend %taillemq;
+    width: auto;
+    height: 40em;
     background-size: cover;
 }
     
 #stand{
     grid-area: 1 / 2 / 2 / 3;
-    @extend %taillemq;
+    width: auto;
+    height: 40em;
 }
     
 //--------------------------------------------------------------------------//
@@ -378,12 +379,14 @@ html, body{
     
 #cerise{
     grid-area: 1 / 1 / 2 / 2;
-    @extend  %taillemq;
+    width: auto;
+    height: 40em;
 }
     
 #mandarine{
     grid-area: 1 / 2 / 2 / 3;
-    @extend  %taillemq;
+    width: auto;
+    height: 40em;
 }
 
 //--------------------------------------------------------------------------//

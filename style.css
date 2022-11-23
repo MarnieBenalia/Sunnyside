@@ -53,7 +53,7 @@ html, body {
 }
 
 #oeuf {
-  width: auto;
+  width: 23.5em;
   height: 20em;
   background-image: url(images/photos/image-transform.jpg);
   background-size: 25em;
@@ -300,11 +300,23 @@ a {
   }
   #orange {
     width: auto;
-    height: 30em;
+    height: 60em;
     background-size: cover;
   }
   #burger {
     display: none;
+  }
+  #wac {
+    font-size: 5em;
+  }
+  #logotop {
+    width: 15em;
+    height: 6em;
+    background-size: 15em;
+  }
+  #arrow {
+    width: 50em;
+    height: 20em;
   }
   #oeufform {
     display: grid;
@@ -313,12 +325,12 @@ a {
   }
   #trans {
     grid-area: 1/1/2/2;
-    width: 49.51em;
+    width: auto;
     height: 40em;
   }
   #oeuf {
     grid-area: 1/2/2/3;
-    width: 49.51em;
+    width: auto;
     height: 40em;
     background-size: cover;
   }
@@ -332,13 +344,13 @@ a {
   }
   #cup {
     grid-area: 1/1/2/2;
-    width: 49.6em;
+    width: auto;
     height: 40em;
     background-size: cover;
   }
   #stand {
     grid-area: 1/2/2/3;
-    width: 49.51em;
+    width: auto;
     height: 40em;
   }
   #cermand {
@@ -348,12 +360,12 @@ a {
   }
   #cerise {
     grid-area: 1/1/2/2;
-    width: 49.51em;
+    width: auto;
     height: 40em;
   }
   #mandarine {
     grid-area: 1/2/2/3;
-    width: 49.51em;
+    width: auto;
     height: 40em;
   }
   #client {
@@ -374,24 +386,36 @@ a {
     grid-area: 2/3/3/4;
   }
   #fourimages {
-    height: 20em;
+    height: 30em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
   #img1 {
     grid-area: 1/1/2/2;
-    background-size: 25em;
+    background-size: cover;
   }
   #img2 {
-    background-size: 25em;
+    background-size: cover;
     grid-area: 1/2/2/3;
   }
   #img3 {
-    background-size: 25em;
+    background-size: cover;
     grid-area: 1/3/2/4;
   }
   #img4 {
-    background-size: 25em;
+    background-size: cover;
     grid-area: 1/4/2/5;
+  }
+  #emilypic, #thomaspic, #jennypic {
+    margin-left: 15.8em;
+  }
+  #list {
+    justify-content: center;
+  }
+  #listservices, #listprojects {
+    padding-left: 3em;
+  }
+  #facebook, #insta, #twitter, #pinterest {
+    padding-left: 6em;
   }
 }/*# sourceMappingURL=style.css.map */

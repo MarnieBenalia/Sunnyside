@@ -1,4 +1,4 @@
-#logotop, #jennypic, #thomaspic, #emilypic, #img4, #img3, #img2, #mandarine, #cerise, #cup, #oeuf, #orange {
+#pinterest, #twitter, #insta, #facebook, #logobottom, #jennypic, #thomaspic, #emilypic, #img4, #img3, #img2, #img1, #mandarine, #cerise, #cup, #oeuf, #arrow, #logotop, #burger, #orange {
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -13,6 +13,30 @@ html, body {
   height: 27em;
   background-image: url(images/photos/image-header.jpg);
   background-size: cover;
+}
+
+#burger {
+  grid-area: 1/2/2/2;
+  margin-top: 1em;
+  margin-left: 8em;
+  width: 3em;
+  height: 3em;
+  background-image: url(images/icons/icon-hamburger.svg);
+}
+
+#logotop {
+  margin: 1em;
+  width: 8em;
+  height: 3em;
+  background-image: url(images/logo.svg);
+}
+
+#arrow {
+  grid-area: 2/2/5/3;
+  margin: 7em 10em 0em 0em;
+  width: 3em;
+  height: 7em;
+  background-image: url(images/icons/icon-arrow-down.svg);
 }
 
 #oeuf {
@@ -55,8 +79,6 @@ html, body {
 #img1 {
   grid-area: 1/1/2/2;
   background-image: url(images/photos/image-gallery-milkbottles.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 12.5em;
 }
 
@@ -76,12 +98,6 @@ html, body {
   grid-area: 2/2/3/3;
   background-image: url(images/photos/image-gallery-sugarcubes.jpg);
   background-size: 12.5em;
-}
-
-#about {
-  width: auto;
-  height: 15em;
-  background-color: #90D4C6;
 }
 
 .tpara {
@@ -116,8 +132,9 @@ html, body {
   font-size: 2.2em;
   line-height: 1.08em;
   color: white;
+  grid-area: 2/1/4/3;
   letter-spacing: 0.2em;
-  margin-bottom: 6em;
+  margin-bottom: 8em;
   text-transform: uppercase;
 }
 
@@ -174,20 +191,7 @@ ul li {
 
 #logobottom {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-}
-
-#listeab {
-  grid-area: 3/1/4/2;
-}
-
-#listeserv {
-  grid-area: 3/2/4/3;
-}
-
-#listproj {
-  grid-area: 3/3/4/4;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 a {
@@ -241,9 +245,61 @@ a {
   margin: 1em 8.4em;
 }
 
-#logotop {
-  margin: 0.1em 0.3em;
-  width: 8em;
-  height: 3em;
+#about {
+  width: auto;
+  height: 20em;
+  background-color: #90D4C6;
+  background-size: cover;
+}
+
+#logobottom {
+  margin-left: 5.5em;
+  padding-top: 5em;
+  width: 11em;
+  height: 1em;
   background-image: url(images/logo.svg);
+}
+
+#list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3em;
+  margin-bottom: 3em;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 1em;
+  line-height: 1.8em;
+  color: #458D7E;
+}
+
+#icons {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
+#facebook {
+  width: 2em;
+  height: 2em;
+  background-image: url(images/icons/icon-facebook.svg);
+}
+
+#insta {
+  width: 2em;
+  height: 2em;
+  background-image: url(images/icons/icon-instagram.svg);
+}
+
+#twitter {
+  width: 2em;
+  height: 2em;
+  background-image: url(images/icons/icon-twitter.svg);
+}
+
+#pinterest {
+  width: 2em;
+  height: 2em;
+  background-image: url(images/icons/icon-pinterest.svg);
 }/*# sourceMappingURL=style.css.map */

@@ -95,7 +95,6 @@ html, body{
     width:auto;
     height:23em;
     display: grid;
-
 }
 
 #img1{ 
@@ -185,10 +184,7 @@ ul li{
     @include typo(Fraunces, 1em, 1.25em, $titre-nom-client);
 }
 
-#logobottom{    
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-}
+
 
 //---------------------------------------------------LIENS---------------------------------------------------------//
 
@@ -196,51 +192,39 @@ a{
     @include typo(Fraunces, 0.9em, 1.5em, $titre-fond-blanc);
     display:flex;
     justify-content: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-decoration-thickness: 0.3em;
 }
 
 #standlink{
-    text-decoration: underline;
     text-decoration-color:#FE7766;
-    text-decoration-thickness: 0.3em;
 }
 
 #translink{
-    text-decoration: underline;
     text-decoration-color:#FAD400;
-    text-decoration-thickness: 0.3em;
 }
 
 //---------------------------------------------------PHOTOSCLIENT ---------------------------------------------------------//
 
 #emilypic{
-    width:5em;
-    height: 5em;
+    @extend %modifpic;
     background-image: url(images/people/image-emily.jpg);
     @extend  %background;
     background-size: cover;
-    border-radius: 50%;
-    margin: 1em 8.4em;
-    
 }
 
 #thomaspic{
-    width:5em;
-    height: 5em;
+    @extend %modifpic;
     background-image: url(images/people/image-thomas.jpg);
     background-size: cover;
     @extend  %background;
-    border-radius: 50%;
-    margin: 1em 8.4em;
 }
 
 #jennypic{
-    width:5em;
-    height: 5em;
+    @extend %modifpic;
     background-image: url(images/people/image-jennie.jpg);
     @extend  %background;
-    background-size: cover;
-    border-radius: 50%;
-    margin: 1em 8.4em;
 }
 
 //--------------------------------------------------------------------------//
@@ -282,16 +266,14 @@ a{
 }
 
 #facebook{
-    width:2em;
-    height:2em;
+    @extend  %tailleicon;
     background-image:url(images/icons/icon-facebook.svg);
     @extend  %background;
 }
 
 #insta{
 
-    width:2em;
-    height:2em;
+    @extend  %tailleicon;
     background-image:url(images/icons/icon-instagram.svg);
     @extend  %background;
 
@@ -299,8 +281,7 @@ a{
 
 #twitter{
 
-    width:2em;
-    height:2em;
+    @extend  %tailleicon;
     background-image:url(images/icons/icon-twitter.svg);
     @extend  %background;
 
@@ -308,12 +289,149 @@ a{
 
 #pinterest{
 
-    width:2em;
-    height:2em;
+    @extend  %tailleicon;
     background-image:url(images/icons/icon-pinterest.svg);
     @extend  %background;
 
 }
 
+//-------------------------------------------------------------------------MEDIAQUERRIES--------------------------------------------------------------------------------------------//
 
 
+@media screen and (min-width: 1023px) {
+
+html, body{
+    margin:0;
+}
+#conteneur{
+    display:flex;
+    flex-direction: column;
+}
+#orange{
+    width: auto;
+    height: 30em;
+    background-size: cover;
+}
+
+#burger{
+    display: none;
+}
+//--------------------------------------------------------------------------//
+#oeufform{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr; 
+}
+
+#trans{
+    grid-area: 1 / 1 / 2 / 2;
+    width: 49.51em;
+    height: 40em;
+}
+
+#oeuf{
+    grid-area: 1 / 2 / 2 / 3;
+    width: 49.51em;
+    height: 40em;
+    background-size: cover;
+}
+
+.tpara{
+    text-align: left;
+}
+//--------------------------------------------------------------------------//
+
+#cupstand{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr; 
+}
+
+#cup{
+    grid-area: 1 / 1 / 2 / 2;
+    width: 49.6em;
+    height: 40em;
+    background-size: cover;
+}
+
+#stand{
+    grid-area: 1 / 2 / 2 / 3;
+    width: 49.51em;
+    height: 40em;
+}
+
+//--------------------------------------------------------------------------//
+#cermand{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr; 
+}
+
+#cerise{
+    grid-area: 1 / 1 / 2 / 2;
+    width: 49.51em;
+    height: 40em;
+}
+
+#mandarine{
+    grid-area: 1 / 2 / 2 / 3;
+    width: 49.51em;
+    height: 40em;
+}
+//--------------------------------------------------------------------------//
+
+#client{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding:4em 4em 4em 4em;
+}
+
+#titreclient{ 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+#emily{
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#thomas{ 
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#jenny { 
+    grid-area: 2 / 3 / 3 / 4; 
+}
+
+//--------------------------------------------------------------------------//
+
+#fourimages{
+    height:20em;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#img1{ 
+    grid-area: 1 / 1 / 2 / 2;
+    background-size: 25em;
+}
+            
+#img2{ 
+    background-size: 25em;
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+#img3{ 
+    background-size: 25em;
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+#img4{ 
+    background-size: 25em;
+    grid-area: 1 / 4 / 2 / 5;
+ }
+ 
+ //--------------------------------------------------------------------------//
+
+
+
+}

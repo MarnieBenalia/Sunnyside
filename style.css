@@ -3,6 +3,19 @@
   background-repeat: no-repeat;
 }
 
+#pinterest, #twitter, #insta, #facebook {
+  width: 2em;
+  height: 2em;
+}
+
+#jennypic, #thomaspic, #emilypic {
+  width: 5em;
+  height: 5em;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 1em 8.4em;
+}
+
 html, body {
   margin: 0 auto;
 }
@@ -189,11 +202,6 @@ ul li {
   color: #A7AAAD;
 }
 
-#logobottom {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
 a {
   text-align: center;
   font-family: Fraunces;
@@ -202,47 +210,33 @@ a {
   color: #24303E;
   display: flex;
   justify-content: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-decoration-thickness: 0.3em;
 }
 
 #standlink {
-  text-decoration: underline;
   -webkit-text-decoration-color: #FE7766;
           text-decoration-color: #FE7766;
-  text-decoration-thickness: 0.3em;
 }
 
 #translink {
-  text-decoration: underline;
   -webkit-text-decoration-color: #FAD400;
           text-decoration-color: #FAD400;
-  text-decoration-thickness: 0.3em;
 }
 
 #emilypic {
-  width: 5em;
-  height: 5em;
   background-image: url(images/people/image-emily.jpg);
   background-size: cover;
-  border-radius: 50%;
-  margin: 1em 8.4em;
 }
 
 #thomaspic {
-  width: 5em;
-  height: 5em;
   background-image: url(images/people/image-thomas.jpg);
   background-size: cover;
-  border-radius: 50%;
-  margin: 1em 8.4em;
 }
 
 #jennypic {
-  width: 5em;
-  height: 5em;
   background-image: url(images/people/image-jennie.jpg);
-  background-size: cover;
-  border-radius: 50%;
-  margin: 1em 8.4em;
 }
 
 #about {
@@ -281,25 +275,123 @@ a {
 }
 
 #facebook {
-  width: 2em;
-  height: 2em;
   background-image: url(images/icons/icon-facebook.svg);
 }
 
 #insta {
-  width: 2em;
-  height: 2em;
   background-image: url(images/icons/icon-instagram.svg);
 }
 
 #twitter {
-  width: 2em;
-  height: 2em;
   background-image: url(images/icons/icon-twitter.svg);
 }
 
 #pinterest {
-  width: 2em;
-  height: 2em;
   background-image: url(images/icons/icon-pinterest.svg);
+}
+
+@media screen and (min-width: 1023px) {
+  html, body {
+    margin: 0;
+  }
+  #conteneur {
+    display: flex;
+    flex-direction: column;
+  }
+  #orange {
+    width: auto;
+    height: 30em;
+    background-size: cover;
+  }
+  #burger {
+    display: none;
+  }
+  #oeufform {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+  #trans {
+    grid-area: 1/1/2/2;
+    width: 49.51em;
+    height: 40em;
+  }
+  #oeuf {
+    grid-area: 1/2/2/3;
+    width: 49.51em;
+    height: 40em;
+    background-size: cover;
+  }
+  .tpara {
+    text-align: left;
+  }
+  #cupstand {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+  #cup {
+    grid-area: 1/1/2/2;
+    width: 49.6em;
+    height: 40em;
+    background-size: cover;
+  }
+  #stand {
+    grid-area: 1/2/2/3;
+    width: 49.51em;
+    height: 40em;
+  }
+  #cermand {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+  #cerise {
+    grid-area: 1/1/2/2;
+    width: 49.51em;
+    height: 40em;
+  }
+  #mandarine {
+    grid-area: 1/2/2/3;
+    width: 49.51em;
+    height: 40em;
+  }
+  #client {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4em 4em 4em 4em;
+  }
+  #titreclient {
+    grid-area: 1/2/2/3;
+  }
+  #emily {
+    grid-area: 2/1/3/2;
+  }
+  #thomas {
+    grid-area: 2/2/3/3;
+  }
+  #jenny {
+    grid-area: 2/3/3/4;
+  }
+  #fourimages {
+    height: 20em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #img1 {
+    grid-area: 1/1/2/2;
+    background-size: 25em;
+  }
+  #img2 {
+    background-size: 25em;
+    grid-area: 1/2/2/3;
+  }
+  #img3 {
+    background-size: 25em;
+    grid-area: 1/3/2/4;
+  }
+  #img4 {
+    background-size: 25em;
+    grid-area: 1/4/2/5;
+  }
 }/*# sourceMappingURL=style.css.map */

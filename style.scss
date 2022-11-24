@@ -106,13 +106,13 @@ html, body{
     @extend  %background;
     background-size: 12.5em;
 }
+
 #img4 { 
     grid-area: 2 / 2 / 3 / 3; 
     background-image:url(images/photos/image-gallery-sugarcubes.jpg);
     @extend  %background;
     background-size: 12.5em;
 }
-
 
 //---------------------------------------------------TEXTES---------------------------------------------------------//
 
@@ -239,8 +239,6 @@ a{
     margin-right: 3em;
     margin-bottom: 3em;
     @include typo(Barlow, 1em, 1.8em, $txt-about);
-
-
 }
 
 #icons{
@@ -248,7 +246,6 @@ a{
     display: flex;
     justify-content: center;
     padding: 2em ;
-
 }
 
 #facebook{
@@ -261,21 +258,18 @@ a{
     @extend  %tailleicon;
     background-image:url(images/icons/icon-instagram.svg);
     @extend  %background;
-
 }
 
 #twitter{
     @extend  %tailleicon;
     background-image:url(images/icons/icon-twitter.svg);
     @extend  %background;
-
 }
 
 #pinterest{
     @extend  %tailleicon;
     background-image:url(images/icons/icon-pinterest.svg);
     @extend  %background;
-
 }
 
 //-------------------------------------------------------------------------MEDIAQUERRIES--------------------------------------------------------------------------------------------//
@@ -348,6 +342,7 @@ html, body{
     margin:5% 18% 0% 15%;
     max-width: 80%;
 }
+
 //--------------------------------------------------------------------------//
     
 #cupstand{
@@ -412,7 +407,11 @@ html, body{
 #jenny { 
     grid-area: 2 / 3 / 3 / 4; 
 }
-    
+
+#emilypic, #thomaspic, #jennypic{
+    margin-left:15.8em;
+} 
+
 //--------------------------------------------------------------------------//
     
     #fourimages{
@@ -439,10 +438,6 @@ html, body{
     #img4{ 
     background-size: cover;
     grid-area: 1 / 4 / 2 / 5;
-}
-
-#emilypic, #thomaspic, #jennypic{
-    margin-left:15.8em;
 }
 
 //--------------------------------------------------------------------------//

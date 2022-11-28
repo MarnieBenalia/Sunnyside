@@ -13,7 +13,7 @@
   height: 5em;
   background-size: cover;
   border-radius: 50%;
-  margin: 1em 8.4em;
+  margin: 2em 11em;
 }
 
 html, body {
@@ -23,7 +23,7 @@ html, body {
 #orange {
   display: grid;
   width: auto;
-  height: 27em;
+  height: 30em;
   background-image: url(images/photos/image-header.jpg);
   background-size: cover;
 }
@@ -53,10 +53,10 @@ html, body {
 }
 
 #oeuf {
-  width: 23.5em;
+  width: auto;
   height: 20em;
   background-image: url(images/photos/image-transform.jpg);
-  background-size: 25em;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -64,7 +64,7 @@ html, body {
   width: auto;
   height: 23.5em;
   background-image: url(images/photos/image-stand-out.jpg);
-  background-size: 25em;
+  background-size: cover;
 }
 
 #cerise {
@@ -92,25 +92,25 @@ html, body {
 #img1 {
   grid-area: 1/1/2/2;
   background-image: url(images/photos/image-gallery-milkbottles.jpg);
-  background-size: 12.5em;
+  background-size: cover;
 }
 
 #img2 {
   grid-area: 1/2/2/3;
   background-image: url(images/photos/image-gallery-orange.jpg);
-  background-size: 12.5em;
+  background-size: cover;
 }
 
 #img3 {
   grid-area: 2/1/3/2;
   background-image: url(images/photos/image-gallery-cone.jpg);
-  background-size: 12.5em;
+  background-size: cover;
 }
 
 #img4 {
   grid-area: 2/2/3/3;
   background-image: url(images/photos/image-gallery-sugarcubes.jpg);
-  background-size: 12.5em;
+  background-size: cover;
 }
 
 .tpara {
@@ -120,6 +120,11 @@ html, body {
   line-height: 1.5em;
   color: #24303E;
   max-width: 95%;
+  margin: 1em;
+}
+
+.ppara {
+  margin: 1em;
 }
 
 .clientname {
@@ -213,6 +218,7 @@ a {
   text-decoration: underline;
   text-transform: uppercase;
   text-decoration-thickness: 0.3em;
+  margin-bottom: 3em;
 }
 
 #standlink {
@@ -391,6 +397,9 @@ a {
   #jenny {
     grid-area: 2/3/3/4;
   }
+  #emilypic, #thomaspic, #jennypic {
+    margin-left: 15.8em;
+  }
   #fourimages {
     height: 30em;
     display: grid;
@@ -411,9 +420,6 @@ a {
   #img4 {
     background-size: cover;
     grid-area: 1/4/2/5;
-  }
-  #emilypic, #thomaspic, #jennypic {
-    margin-left: 15.8em;
   }
   #list {
     justify-content: center;

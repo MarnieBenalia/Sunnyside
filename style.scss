@@ -15,7 +15,7 @@ html, body{
 
 #orange{
     display: grid;
-    @include wihe (auto, 27em);
+    @include wihe (auto, 30em);
     background-image: url(images/photos/image-header.jpg);
     background-size: cover;
     @extend  %background;
@@ -49,9 +49,9 @@ html, body{
 //--------------------------------------------------------------------------//
 
 #oeuf{
-    @include wihe (23.5em, 20em);
+    @include wihe (auto, 20em);
     background-image: url(images/photos/image-transform.jpg);
-    background-size: 25em;
+    background-size: cover;
     background-repeat:no-repeat;
     @extend  %background;
 }
@@ -59,7 +59,7 @@ html, body{
 #cup{
     @include wihe (auto, 23.5em);
     background-image:url(images/photos/image-stand-out.jpg);
-    background-size: 25em;
+    background-size: cover;
     @extend  %background;
 }
 
@@ -90,28 +90,28 @@ html, body{
     grid-area: 1 / 1 / 2 / 2; 
     background-image:url(images/photos/image-gallery-milkbottles.jpg);
     @extend  %background;
-    background-size: 12.5em;
+    background-size: cover;
 }
 
 #img2{ 
     grid-area: 1 / 2 / 2 / 3;
     background-image:url(images/photos/image-gallery-orange.jpg);
     @extend  %background;
-    background-size: 12.5em;
+    background-size: cover;
 }
 
 #img3{ 
     grid-area: 2 / 1 / 3 / 2;
     background-image:url(images/photos/image-gallery-cone.jpg);
     @extend  %background;
-    background-size: 12.5em;
+    background-size: cover;
 }
 
 #img4 { 
     grid-area: 2 / 2 / 3 / 3; 
     background-image:url(images/photos/image-gallery-sugarcubes.jpg);
     @extend  %background;
-    background-size: 12.5em;
+    background-size: cover;
 }
 
 //---------------------------------------------------TEXTES---------------------------------------------------------//
@@ -119,6 +119,12 @@ html, body{
 .tpara{
     @include typo(Fraunces, 2em, 1.5em, $titre-fond-blanc);
     max-width:95%;
+    margin: 1em
+
+}
+
+.ppara{
+    margin:1em;
 }
 
 .clientname{
@@ -184,6 +190,7 @@ a{
     text-decoration: underline;
     text-transform: uppercase;
     text-decoration-thickness: 0.3em;
+    margin-bottom:3em;
 }
 
 #standlink{

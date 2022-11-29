@@ -396,7 +396,7 @@ html, body{
 #client{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding:4em 4em 4em 4em;
+    height: 30em;
 }
     
 #titreclient{ 
@@ -405,24 +405,24 @@ html, body{
     
 #emily{
     grid-area: 2 / 1 / 3 / 2;
+    width:23em;
 }
     
 #thomas{ 
     grid-area: 2 / 2 / 3 / 3;
+    width:23em;
 }
     
 #jenny { 
     grid-area: 2 / 3 / 3 / 4; 
+    width:23em;
 }
 
-#emilypic, #thomaspic, #jennypic{
-    margin-left:15.8em;
-} 
 
 //--------------------------------------------------------------------------//
     
     #fourimages{
-    height:30em;
+    height:25em;
     display:grid;
     grid-template-columns: repeat(4, 1fr);
 }

@@ -1,11 +1,12 @@
-#pinterest, #twitter, #insta, #facebook, #logobottom, #jennypic, #thomaspic, #emilypic, #img4, #img3, #img2, #img1, #mandarine, #cerise, #cup, #oeuf, #arrow, #logotop, #burger, #orange {
+#jennypic, #arrow, #logotop, #burger {
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#pinterest, #twitter, #insta, #facebook {
-  width: 2em;
-  height: 2em;
+#thomaspic, #emilypic, #img4, #img3, #img2, #img1, #mandarine, #cerise, #cup, #oeuf, #orange {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #jennypic, #thomaspic, #emilypic {
@@ -25,13 +26,12 @@ html, body {
   width: auto;
   height: 30em;
   background-image: url(images/photos/image-header.jpg);
-  background-size: cover;
 }
 
 #burger {
   grid-area: 1/2/2/2;
   margin-top: 1em;
-  margin-left: 8em;
+  margin-left: 11em;
   width: 3em;
   height: 3em;
   background-image: url(images/icons/icon-hamburger.svg);
@@ -46,32 +46,32 @@ html, body {
 
 #arrow {
   grid-area: 2/2/5/3;
-  margin: 7em 10em 0em 0em;
+  margin: 7em 0em 0em 0.2em;
   width: 3em;
   height: 7em;
   background-image: url(images/icons/icon-arrow-down.svg);
+}
+
+#menu {
+  display: none;
 }
 
 #oeuf {
   width: auto;
   height: 20em;
   background-image: url(images/photos/image-transform.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #cup {
   width: auto;
   height: 23.5em;
   background-image: url(images/photos/image-stand-out.jpg);
-  background-size: cover;
 }
 
 #cerise {
   width: auto;
   height: 35em;
   background-image: url(images/photos/image-graphic-design.jpg);
-  background-size: cover;
 }
 
 #mandarine {
@@ -80,7 +80,6 @@ html, body {
   width: auto;
   height: 30em;
   background-image: url(images/photos/image-photography.jpg);
-  background-size: cover;
 }
 
 #fourimages {
@@ -92,25 +91,21 @@ html, body {
 #img1 {
   grid-area: 1/1/2/2;
   background-image: url(images/photos/image-gallery-milkbottles.jpg);
-  background-size: cover;
 }
 
 #img2 {
   grid-area: 1/2/2/3;
   background-image: url(images/photos/image-gallery-orange.jpg);
-  background-size: cover;
 }
 
 #img3 {
   grid-area: 2/1/3/2;
   background-image: url(images/photos/image-gallery-cone.jpg);
-  background-size: cover;
 }
 
 #img4 {
   grid-area: 2/2/3/3;
   background-image: url(images/photos/image-gallery-sugarcubes.jpg);
-  background-size: cover;
 }
 
 .tpara {
@@ -233,12 +228,10 @@ a {
 
 #emilypic {
   background-image: url(images/people/image-emily.jpg);
-  background-size: cover;
 }
 
 #thomaspic {
   background-image: url(images/people/image-thomas.jpg);
-  background-size: cover;
 }
 
 #jennypic {
@@ -247,17 +240,16 @@ a {
 
 #about {
   width: auto;
-  height: 20em;
+  height: 25em;
   background-color: #90D4C6;
   background-size: cover;
 }
 
 #logobottom {
-  margin-left: 5.5em;
-  padding-top: 5em;
-  width: 11em;
-  height: 1em;
-  background-image: url(images/logo.svg);
+  fill: #2C7566;
+  display: flex;
+  justify-content: center;
+  padding-left: 4.5em;
 }
 
 #list {
@@ -278,22 +270,11 @@ a {
   display: flex;
   justify-content: center;
   padding: 2em;
+  fill: #2C7566;
 }
 
-#facebook {
-  background-image: url(images/icons/icon-facebook.svg);
-}
-
-#insta {
-  background-image: url(images/icons/icon-instagram.svg);
-}
-
-#twitter {
-  background-image: url(images/icons/icon-twitter.svg);
-}
-
-#pinterest {
-  background-image: url(images/icons/icon-pinterest.svg);
+#facebook, #insta, #twitter, #pinterest {
+  padding: 1em;
 }
 
 @media screen and (min-width: 1023px) {
@@ -313,16 +294,18 @@ a {
     display: none;
   }
   #wac {
-    font-size: 5em;
+    font-size: 4.5em;
   }
   #logotop {
     width: 15em;
     height: 6em;
-    background-size: 15em;
+    background-size: 10em;
   }
   #arrow {
-    width: 50em;
-    height: 20em;
+    margin-top: 15em;
+    width: 5em;
+    height: 15em;
+    background-size: 70%;
   }
   #oeufform {
     display: grid;
@@ -340,14 +323,47 @@ a {
     height: 40em;
     background-size: cover;
   }
+  #menu {
+    font-family: "Fraunces", serif;
+    color: white;
+    font-size: 0.9em;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3em;
+    margin-top: 4em;
+    text-align: center;
+  }
+  #contact {
+    cursor: pointer;
+    color: #24303E;
+  }
+  #contact:hover {
+    content: "";
+    color: white;
+    display: block;
+  }
   .tpara {
     text-align: left;
-    margin: 25% 20% 0% 15%;
+    margin: 25% 20% 0% 17%;
   }
   .ppara {
     text-align: left;
     margin: 5% 18% 0% 15%;
     max-width: 80%;
+  }
+  a {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5em 0em 10em 8.2em;
+  }
+  #tcer {
+    margin: 0;
+    padding: 15.2em 0em 0em 0em;
+  }
+  #pmand {
+    margin: 0em;
+    padding: 0em 0em 5em 0em;
   }
   #cupstand {
     display: grid;
@@ -374,34 +390,39 @@ a {
     grid-area: 1/1/2/2;
     width: auto;
     height: 40em;
+    padding: 0em 5em;
   }
   #mandarine {
     grid-area: 1/2/2/3;
     width: auto;
     height: 40em;
+    padding: 0em 5em;
   }
   #client {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 30em;
+    margin: 3em 0em;
+    padding: 0em 3em;
   }
   #titreclient {
     grid-area: 1/2/2/3;
+    letter-spacing: 0.4em;
   }
   #emily {
     grid-area: 2/1/3/2;
-    width: 23em;
+    width: 24em;
   }
   #thomas {
     grid-area: 2/2/3/3;
-    width: 23em;
+    width: 27em;
   }
   #jenny {
     grid-area: 2/3/3/4;
-    width: 23em;
+    width: 24em;
   }
   #fourimages {
-    height: 25em;
+    height: 20em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
@@ -427,7 +448,32 @@ a {
   #listservices, #listprojects {
     padding-left: 3em;
   }
-  #facebook, #insta, #twitter, #pinterest {
-    padding-left: 6em;
+  #listabout:hover {
+    color: white;
+    cursor: pointer;
+  }
+  #listservices:hover {
+    color: white;
+    cursor: pointer;
+  }
+  #listprojects:hover {
+    color: white;
+    cursor: pointer;
+  }
+  #facebook:hover {
+    fill: white;
+    cursor: pointer;
+  }
+  #insta:hover {
+    fill: white;
+    cursor: pointer;
+  }
+  #twitter:hover {
+    fill: white;
+    cursor: pointer;
+  }
+  #pinterest:hover {
+    fill: white;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=style.css.map */

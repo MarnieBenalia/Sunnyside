@@ -278,6 +278,22 @@ a {
 }
 
 @media screen and (min-width: 1023px) {
+  #burger, #logotop, #arrow, #jennypic {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #orange, #oeuf, #cup, #cerise, #mandarine, #img1, #img2, #img3, #img4, #emilypic, #thomaspic {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #emilypic, #thomaspic, #jennypic {
+    width: 5em;
+    height: 5em;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 2em 11em;
+  }
   html, body {
     margin: 0;
   }

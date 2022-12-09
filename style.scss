@@ -46,6 +46,7 @@ html, body{
 #menu{
     display:none
 }
+
 //--------------------------------------------------------------------------//
 
 #oeuf{
@@ -173,8 +174,7 @@ ul li{
 
 a{
     @include typo(Fraunces, 0.9em, 1.5em, $titre-fond-blanc);
-    display:flex;
-    justify-content: center;
+    @include flexcontent (flex, center);
     text-decoration: underline;
     text-transform: uppercase;
     text-decoration-thickness: 0.3em;
@@ -219,15 +219,13 @@ a{
 
 #logobottom{
     fill:$titre-about;
-    display:flex;
-    justify-content: center;
+    @include flexcontent (flex, center);
     padding-left: 4.5em;
 }
 
 #list{
     list-style-type: none;  
-    display: flex;
-    justify-content: space-between;
+    @include flexcontent (flex,space-between);
     margin-right: 3em;
     margin-bottom: 3em;
     @include typo(Barlow, 1em, 1.8em, $txt-about);
@@ -235,8 +233,7 @@ a{
 
 #icons{
     list-style-type: none;  
-    display: flex;
-    justify-content: center;
+    @include flexcontent (flex, center);
     padding: 2em ;
     fill: #2C7566;
 }
@@ -318,8 +315,7 @@ html, body{
     color: white;
     font-size: 0.9em;
     list-style-type: none;  
-    display: flex;
-    justify-content: space-between;
+    @include flexcontent (flex, space-between);
     margin-right: 3em;
     align-items: center;
 }
@@ -351,8 +347,7 @@ button{
 }
 
 a{
-    display: flex;
-    justify-content: flex-start;
+    @include flexcontent (flex, flex-start);
     margin:5em 0em 10em 8.2em;
 }
 

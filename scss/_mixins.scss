@@ -27,3 +27,8 @@
         width:$width;
         height: $height;
 }
+
+@mixin flexcontent ($display, $justify-content){
+        display:$display;
+        justify-content: $justify-content;
+}
